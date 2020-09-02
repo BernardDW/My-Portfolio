@@ -2,11 +2,11 @@ import React from 'react';
 
 function About() {
   return (
-    <div class="about-image">
-        <div class=" titles">
+    <div className="about-image">
+        <div className=" titles">
             <h1>ABOUT ME</h1>
         </div>
-        <div class="about-text">
+        <div className="about-text">
             <p>I am currently a 3rd year BSc IT student, graduating at the end of this year. After my first year at university, I received a Golden Key 
               International Honour Society for achieving outstanding academic performance.</p>
             <p>I have a passion for software development and I love the feeling when you get to look at the software you made or helped develop. 
