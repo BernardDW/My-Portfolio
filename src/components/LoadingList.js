@@ -6,9 +6,12 @@ function LoadingList(Component) {
   return function WihLoadingComponent({ isLoading, ...props }) {
     if (!isLoading) return <Component {...props} />;
     return (
-      <p style={{ textAlign: 'center', fontSize: '30px' }}>
-        Hold on, fetching data may take some time :)
-      </p>
+      <div className="spinner">
+        <div className="ball ball-1"></div>
+        <div className="ball ball-2"></div>
+        <div className="ball ball-3"></div>
+        <div className="ball ball-4"></div>
+      </div>
     );
   };
 }
