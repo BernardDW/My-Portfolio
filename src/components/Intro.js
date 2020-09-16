@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 
 function Intro() {
   return (
-    <div className="intro-image">
+    <div id = "home" className="bg-image intro">
         <div className="intro-text">
             <h1>Bernard de Wet</h1>
             <h3>Aspiring software developer</h3>

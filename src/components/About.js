@@ -2,8 +2,8 @@ import React from 'react';
 
 function About() {
   return (
-    <div className="about-image">
-        <div className=" titles">
+    <div className="bg-image about" id = "about">
+      <div className="titles">
             <h1>ABOUT ME</h1>
         </div>
         <div className="about-text">

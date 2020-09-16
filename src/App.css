@@ -11,7 +11,6 @@ Darker light blue - #45A29E
 
 h1 {
   font-size: 2.5em;
-  
   font-weight: 400;
   /* color: #00ffee; */
 }
@@ -43,7 +42,19 @@ h4 {
   color: #ffff;
 }
 
+.bg-image {
+  background-color: #cccccc;
+  height: 900px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
+#tsparticles {
+  width: 100%;
+  height: 100%;
+}
 
 /* 
 ========================================================================================================================================
@@ -103,14 +114,8 @@ Intro
 ========================================================================================================================================
 */
 
-.intro-image {
-  background-image: url("./assets/bg.jpg");
-  background-color: #cccccc;
-  height: 900px;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.bg-image.intro {
+  background-image: url("./assets/intro.jpg");
 }
 
 .intro-text {
@@ -162,17 +167,18 @@ About
 ========================================================================================================================================
 */
 
-.about-image {
-  background:linear-gradient(rgba(11,12,16, 0.5), rgba(11,12,16,0.5)) , url("./assets/about-bg.jpg");
-  background-color: #cccccc;
-  height: 900px;
-  background-position: top;
+.bg-image.about {
+  background: linear-gradient(rgba(0,0,0, 0.85), rgba(0,0,0, 0.85)) , url("./assets/about.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  border-bottom: 0.2px #cccccc solid;
-  border-top: 0.2px #cccccc solid;
+  text-align: left;
+  color: white;
+  border-bottom: 0.1px #0B0C10 solid;
+  border-top: 0.1px #0B0C10 solid;
 }
+
 
 .about-text {
   text-align: center;
@@ -206,6 +212,7 @@ About
 /* If the screen size is 714px wide or less */
 @media screen and (max-width: 870px) {
   .about-text {
+    font-size: 0.8em;
     line-height: 30px;
     word-spacing: 10%;
     top: 25%;
@@ -222,15 +229,14 @@ Resume
 */
 
 .resume-image {
-  background: linear-gradient(rgba(11,12,16, 0.4), rgba(11,12,16,0.4)) , url("./assets/gg.jpg");
-  /* height: 900px; */
+  background: linear-gradient(rgba(0,0,0, 0.85), rgba(0,0,0, 0.85)) , url("./assets/rest.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   text-align: left;
   color: white;
-  border-bottom: 0.2px #cccccc solid;
+  border-bottom: 0.1px #0B0C10 solid;
 }
 
 .resume-container {
@@ -254,6 +260,25 @@ Resume
   padding-bottom: 5em;
 }
 
+@media screen and (max-width: 870px) {
+  .resume-container h2 {
+    font-size: 1.2em;
+  }
+
+  .resume-container h5 {
+    font-size: 1em;
+  }
+
+  .resume-container p {
+    font-size: 0.9em;
+  }
+
+  .resume-container {
+    padding-top: 2em;
+  }
+
+}
+
 
 
 /* 
@@ -265,8 +290,8 @@ Portfolio
 /* LOADER */
 
 .ball {
-  height: 50px;
-  width: 50px;
+  height: 20px;
+  width: 20px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -321,11 +346,16 @@ Portfolio
   }
 }
 
+.spinner {
+  margin-top: 30%;
+}
+
 /* Cards */
 
 .resume-image.portfolio {
+  background: linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.9)) , url("./assets/rest.jpg");
   color: #0B0C10;
-  border-bottom: 0.2px #cccccc solid;
+  min-height: 900px;
 }
 
 .card-deck {
@@ -351,7 +381,6 @@ Portfolio
 .btn-ekstra {
   width: 10em;
   font-size: 0.9em;
-  margin-left: 25%;
   margin-top: 15%;
 }
 
@@ -366,13 +395,20 @@ Portfolio
 @media screen and (min-width: 1300px) {
   .card-deck {
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 12em;
-    margin-right: 12em;
+    margin-left: 6em;
+    margin-right: 6em;
     grid-gap: 3rem;
   }
 }
 
-@media screen and (max-width: 71px) {
+@media screen and (min-width: 1600px) {
+  .card-deck {
+    margin-left: 12em;
+    margin-right: 12em;
+  }
+}
+
+@media screen and (max-width: 714px) {
   .card-deck {
     grid-template-columns: 1fr;
   }

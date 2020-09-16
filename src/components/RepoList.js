@@ -12,7 +12,7 @@ const RepoList = (props) => {
     <div>
         <CardDeck>
             {repos.map((repo) => {
-              // console.log({repos})
+              console.log({repos})
               return (
                   Carddd(repo)
               );
@@ -22,16 +22,17 @@ const RepoList = (props) => {
   );
 };
 
+// Card function used to display repositories
 function Carddd(repo) {
-    const [propss, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
+    const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
     return (
      <animated.div className="card"
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
-      style={{ transform: propss.xys.interpolate(trans) }}
+      style={{ transform: props.xys.interpolate(trans) }}
+      key={repo.id}
     >
         <Card>
-        {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
             <Card.Body>
                 <Card.Title>{repo.name}</Card.Title>
                 <Card.Text>

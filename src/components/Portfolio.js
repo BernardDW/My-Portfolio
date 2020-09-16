@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import RepoList from './RepoList';
 import LoadingList from './LoadingList';
+import Particlesss from "./ParticlesComp";
 
 function Portfolio() {
   //Declare my constants
@@ -20,7 +21,8 @@ function Portfolio() {
       });
   }, [setAppState]);
   return (
-    <div className='resume-image portfolio'>
+    <div className='resume-image portfolio' id = "portfolio">
+      <Particlesss></Particlesss>
       <div className=" titles">
           <h1>Portfolio</h1>
       </div> 

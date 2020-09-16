@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function Resume() {
   return (
-    <div className="resume-image">
+    <div className="resume-image" id = "resume">
       <div className=" titles">
           <h1>RESUME</h1>
       </div> 
