@@ -9,6 +9,7 @@ import Intro from './components/Intro.js';
 import About from './components/About.js';
 import Resume from './components/Resume.js';
 import Portfolio from './components/Portfolio.js';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <About></About>
       <Resume></Resume>
       <Portfolio></Portfolio>
+      <Footer></Footer>
     </div>
   );
 }

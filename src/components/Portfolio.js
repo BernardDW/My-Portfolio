@@ -20,6 +20,7 @@ function Portfolio() {
         setAppState({ loading: false, repos: repos });
       });
   }, [setAppState]);
+
   return (
     <div className='resume-image portfolio' id = "portfolio">
       <Particlesss></Particlesss>
