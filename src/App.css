@@ -9,6 +9,10 @@ Darker light blue - #45A29E
 
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+html {
+  background-color: black;
+}
+
 h1 {
   font-size: 2.5em;
   font-weight: 400;
@@ -137,6 +141,11 @@ Intro
 .btn {
   border: 2px solid transparent;
   margin-top: 0.5em;
+  width: 10.7em;
+}
+
+.dl {
+  display: block;
 }
 
 .btn-outline-dark {
@@ -158,6 +167,10 @@ Intro
     display: block;
     left: 15%;
   }
+/* 
+  .btn {
+    margin-left: 5em;
+  } */
 
 }
 
@@ -244,7 +257,7 @@ Resume
 }
 
 .resume-container h2 {
-  color: #00e6d6;
+  color: #8efff7;
 }
 
 .resume-container h5 {
@@ -420,6 +433,26 @@ JOKES
 ========================================================================================================================================
 */
 
+@media screen and (max-width: 714px) {
+  .carousel.slide {
+    padding-top: 15%;
+  }
+  
+  .carousel-control-prev {
+    padding-top: 15%;
+  }
+  
+  .carousel-control-next {
+    padding-top: 15%;
+  }
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+
+
 .jokes {
   height: 300px;
   width: 100%;
@@ -431,4 +464,28 @@ JOKES
 .jokesText {
   text-align: center;
   margin-bottom: 6%;
+}
+
+.vraag {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
+/*
+========================================================================================================================================
+News
+========================================================================================================================================
+*/
+
+.news {
+  background-color: black;
+}
+
+.titles.newsh1{
+  padding-top: 1.5em;
+}
+
+.newsContainer {
+  padding-bottom: 3.5em;
 }

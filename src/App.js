@@ -10,6 +10,7 @@ import About from './components/About.js';
 import Resume from './components/Resume.js';
 import Portfolio from './components/Portfolio.js';
 import Footer from './components/Footer.js';
+import News from './components/News.js';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Resume></Resume>
       <Portfolio></Portfolio>
       <Footer></Footer>
+      <News></News>
     </div>
   );
 }

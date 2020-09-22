@@ -32,8 +32,8 @@ function Resume() {
           </Col>
           <Col>
             <h5>Flutter app developer at Specials Fest</h5>
-            <p>I have received a certificate from The Golden Key International Society for having 18 distinctions up to present in university.</p>
-            <p>I have yet the second semester to finish my degree cum laude.</p>
+            <p>I helped developed the app Specials Fest.</p>
+            <p>I did alot of the programming, app testing and store management on both IOS and Android app stores.</p>
           </Col>
         </Row>
         <br></br><br></br>
@@ -43,8 +43,7 @@ function Resume() {
           </Col>
           <Col>
             <h5>Wordpress website developer at Eternaweb</h5>
-            <p>I have received a certificate from The Golden Key International Society for having 18 distinctions up to present in university.</p>
-            <p>I have yet the second semester to finish my degree cum laude.</p>
+            <p>I developed e-commerce/websites in Wordpress for both local and international companies. </p>
           </Col>
         </Row>
       </Container>

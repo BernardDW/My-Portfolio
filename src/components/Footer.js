@@ -32,8 +32,8 @@ function Footer() {
                 {jokes.map(joke => (
                     <Carousel.Item key={joke.id}>
                         <div className = "jokesText">
-                            <h3>{joke.setup}</h3>
-                            <p>{joke.punchline}</p>
+                          <p className = "vraag">{joke.setup}</p>
+                          <p>{joke.punchline}</p>
                         </div>
                     </Carousel.Item>
                 ))}

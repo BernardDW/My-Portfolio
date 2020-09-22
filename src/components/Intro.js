@@ -8,6 +8,7 @@ function Intro() {
             <h1>Bernard de Wet</h1>
             <h3>Aspiring software developer</h3>
             <Button variant="outline-dark" href="mailto:ekisbernard@gmail.com">Contact me</Button>
+            <Button variant="outline-dark" href="https" target="_blank" className="dl">Download Resume</Button>
         </div>
     </div>
   );
