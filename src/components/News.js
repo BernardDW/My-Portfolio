@@ -5,7 +5,7 @@ function News() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [articlesList, setArticlesList] = useState([]);
-    const baseUrl ="https://newsapi.org/v2/top-headlines?sources=recode&apiKey=";
+    const baseUrl ="https://content.guardianapis.com/search?&tag=technology/technology&api-key=";
     const fullURL = `${baseUrl}${process.env.REACT_APP_NEWS_API_KEY}`
 
     useEffect(() => {
@@ -13,7 +13,7 @@ function News() {
         .then(res => res.json())
         .then((result) => {
             setIsLoaded(true);
-            setArticlesList(result.articles);
+            setArticlesList(result.response.results);
         },
         (error) => {
             setIsLoaded(true);
@@ -37,10 +37,10 @@ function News() {
                     <CardDeck>
                         {articlesList.slice(0,6).map((article,i) => (
                             <Card key={i}>
-                                <Card.Img variant="top" src={article.urlToImage} />
+                                <Card.Img variant="top" src="https://assets.guim.co.uk/images/eada8aa27c12fe2d5afa3a89d3fbae0d/fallback-logo.png" />
                                 <Card.Body>
-                                    <Card.Title>{article.title}</Card.Title>
-                                    <Button href={article.url} className = "btn-ekstra" variant="outline-dark" target="_blank">Read</Button>
+                                    <Card.Title>{article.webTitle}</Card.Title>
+                                    <Button href={article.webUrl} className = "btn-ekstra" variant="outline-dark" target="_blank">Read</Button>
                                 </Card.Body>
                             </Card>
                         ))}
