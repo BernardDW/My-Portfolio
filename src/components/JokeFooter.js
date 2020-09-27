@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {Carousel} from 'react-bootstrap'
 
-function Footer() {
+function JokeFooter() {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [jokes, setJokes] = useState([]);
@@ -44,4 +44,4 @@ function Footer() {
       );
     }
 }
-export default Footer;
+export default JokeFooter;

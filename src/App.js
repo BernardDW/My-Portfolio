@@ -9,7 +9,7 @@ import Intro from './components/Intro.js';
 import About from './components/About.js';
 import Resume from './components/Resume.js';
 import Portfolio from './components/Portfolio.js';
-import Footer from './components/Footer.js';
+import JokeFooter from './components/JokeFooter.js';
 import News from './components/News.js';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <About></About>
       <Resume></Resume>
       <Portfolio></Portfolio>
-      <Footer></Footer>
+      <JokeFooter></JokeFooter>
       <News></News>
     </div>
   );
