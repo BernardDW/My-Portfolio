@@ -24,9 +24,9 @@ function News() {
 
 
     if (error) {
-    return <div>Error: {error.message}</div>;
+    return <div></div>;
     } else if (!isLoaded) {
-    return <div>Loading...</div>;
+    return <div></div>;
     } else {
         return (
             <div className = "news">
